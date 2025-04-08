@@ -14,34 +14,31 @@
 # Here's a sample run of the program (user input is in blue):
 
 # How old are you? 20 You can vote in Peturksbouipo where the voting age is 16. You cannot vote in Stanlau where the voting age is 25. You cannot vote in Mayengua where the voting age is 48.
-
-
+PETURKSBOUIPO_AGE : int = 16
+STANLAU_AGE : int = 25
+MAYENGUA_AGE : int = 48
 def main():
-    Peturksbouipo:int=16
-    Stanlau:int=25
-    Mayengua:int=48
 
+    voter_name:str=input("Enter Your Name :")
+    age:int=int(input("Enter Your Age  :"))
 
-   
-    age=input(int("Enter Your Age  :"))
-
-    if age >= 16:
-     print("Your voting country is Peturksbouipo")
+    if age >= PETURKSBOUIPO_AGE:
+        print(f"{voter_name} Your voting country is Peturksbouipo")
     else:
-        print(f"You are not voting country is Peturksbouipo voting age is {Peturksbouipo}")
+        print(f"You are not voting country is Peturksbouipo voting age is {PETURKSBOUIPO_AGE}")
 
-    if age >= 25:
-     print("Your voting country is Stanlau")
+    if age >= STANLAU_AGE:
+        print(f"{voter_name} Your voting country is Stanlau")
     else:
-        print(f"You are not voting country is Stanlau voting age is {Stanlau}")
+        print(f"You are not voting country is Stanlau voting age is {STANLAU_AGE}")
     
     
-    if age >= 48:
-     print("Your voting country is Mayengua")
+    if age >= MAYENGUA_AGE:
+        print(f"{voter_name} Your voting country is Mayengua")
     else:
-        print(f"You are not voting country is Peturksbouipo voting age is {Mayengua}")
+        print(f"You are not voting country is Peturksbouipo voting age is {MAYENGUA_AGE}")
 
-if __name__ == 'main':
-   main()
+if __name__== '__main__':
+    main()
 
     
