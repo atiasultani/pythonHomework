@@ -26,7 +26,8 @@ def main():
 
     ten= random.randint(MIN_VALUE,N_NUMBERS)
     print(ten)
-
+    one_to_hun= random.randint(MIN_VALUE,MAX_VALUE)
+    print(one_to_hun)
 
 if __name__ == '__main__':
     main()
